@@ -30,6 +30,8 @@ I trained multiple versions of the DQN model to see how proposed improvements in
 The final model I used was a Dueling-Double-DQN model.
 
 I found that using the same hyperparameters as given in the Lunar Lander environment as part of the course worked well for this environment.
+## Agent Hyperparameters
+
 | Agent Hyperparameters | Description |
 | --------------------- | ----------- |
 | BUFFER_SIZE = int(1e5)|replay buffer size|
@@ -38,4 +40,8 @@ I found that using the same hyperparameters as given in the Lunar Lander environ
 |TAU = 1e-3              |for soft update of target parameters|
 |LR = 5e-4               |learning rate|
 |UPDATE_EVERY = 4        |how often to update the network|
+
+## Neural Network Architecture
+
+I used a neural network  with 2 hidden layers each containing 64 neurons with the [SELU activation function](https://pytorch.org/docs/stable/generated/torch.nn.SELU.html). Did not use Dropout or Batch Normalization as they don't seem to be well suited for RL tasks
 
