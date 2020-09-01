@@ -14,6 +14,7 @@ I trained multiple versions of the DQN model to see how proposed improvements in
 * [Basic DQN](https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf)
 * [Double DQN](https://arxiv.org/abs/1509.06461) - it has been shown that the baseline DQN overestimates action values during training. To counter that, Double DQN uses 2 separate networks - one to pick the next action and another to evaluate that action (choose its action value).
 * [Dueling DQN](https://arxiv.org/abs/1511.06581) - Dueling DQN's are based on the fact that for some states of the environment, there isn't much variance in the state-action values - meaning that we don't need to estimate the action-value function (for each action) everytime... only estimating the state-value function should suffice. Therefore Dueling DQN uses 1 backbone model but splits  it into 2 streams - one predicts the state-value and the other advantage-value.
+* Dueling Double DQN - combines all of the above
 
 ## Results
 | Basic DQN | Double DQN |
