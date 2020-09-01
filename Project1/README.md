@@ -1,7 +1,7 @@
 # Udacity-Deep-Reinforcement-Learning
 
 * ***README copied from https://github.com/udacity/deep-reinforcement-learning/blob/master/p1_navigation/README.md***
-* ***Most of agent.py is the same as the implementation provided by Udacity in the LunarLander example***
+* ***Most of the code is sourced from https://github.com/udacity/deep-reinforcement-learning/tree/master/dqn/solution with modifications made for enhancements***
 
 
 [//]: # (Image References)
