@@ -25,3 +25,17 @@ I trained multiple versions of the DQN model to see how proposed improvements in
 :-------------------------:|:-------------------------:|
 ![Dueling DQN](https://github.com/AJS1NGH/Udacity-Deep-Reinforcement-Learning/blob/master/Project1/images/Dueling_DQN.jpg) |  ![Dueling Double DQN](https://github.com/AJS1NGH/Udacity-Deep-Reinforcement-Learning/blob/master/Project1/images/Dueling_Double_DQN.jpg) |
 
+# DQN Final Model Hyperparameters
+
+The final model I used was a Dueling-Double-DQN model.
+
+I found that using the same hyperparameters as given in the Lunar Lander environment as part of the course worked well for this environment.
+| Agent Hyperparameters | Description |
+| --------------------- | ----------- |
+| BUFFER_SIZE = int(1e5)|replay buffer size|
+|BATCH_SIZE = 64         |minibatch size|
+|GAMMA = 0.99            |discount factor|
+|TAU = 1e-3              |for soft update of target parameters|
+|LR = 5e-4               |learning rate|
+|UPDATE_EVERY = 4        |how often to update the network|
+
