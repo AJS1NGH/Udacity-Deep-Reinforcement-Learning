@@ -45,3 +45,12 @@ I found that using the same hyperparameters as given in the Lunar Lander environ
 
 I used a neural network  with 2 hidden layers each containing 64 neurons with the [SELU activation function](https://pytorch.org/docs/stable/generated/torch.nn.SELU.html). Did not use Dropout or Batch Normalization as they don't seem to be well suited for RL tasks
 
+# Future Ideas
+
+Some interesting ways to improve this model in the future would be to implement some or all of the following:
+* [Prioritized Experience Replay](https://arxiv.org/abs/1511.05952)
+* [Distributional DQN](https://arxiv.org/abs/1707.06887)
+* [Noisy DQN](https://arxiv.org/abs/1706.10295)
+* Playing around with Agent & Neural Network Architecture - buffer size would be interesting as we can make it smaller to make sure we are sampling from more recent and better outcomes from a more recent action value approximation.
+* Incorporating all 6 improvements from papers mentioned in this readme as in [Rainbow](https://arxiv.org/abs/1710.02298)
+
